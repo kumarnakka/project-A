@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<types xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:////home/asus/rti_connext_dds-6.0.1/bin/../resource/app/app_support/rtiddsgen/schema/rti_dds_topic_types.xsd">
+<module name="adas_dds">
+  <module name="std_msgs">
+    <struct name= "Time">
+      <member name="sec" type="uint32"/>
+      <member name="nsec" type="uint32"/>
+    </struct>
+  </module>
+</module>
+</types>

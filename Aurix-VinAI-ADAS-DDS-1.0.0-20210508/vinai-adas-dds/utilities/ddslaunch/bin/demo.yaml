@@ -1,0 +1,28 @@
+params:
+  prefix: /work
+nodes:
+  - name: Camera Node
+    executable: gmsl_camera_pub
+    path: $prefix/camera/adas-dds-pro/adas_dds-1.0.0-armv8QNX7.0.0qcc_gpp5.4.0/bin
+    args:
+  - name: Perception Subnodes
+    executable: PerceptionSubnodes
+    path: $prefix/perception
+    args:
+      - /work/perception/configs/subnodes/subnodes_config.yaml
+  - name: Fusion Node
+    executable: lane_fusion_release
+    path: $prefix/lane_fusion
+    args:
+  - name: motion planner input
+    executable: motion_planner_input_interfaces
+    path: $prefix/control
+    args:
+  - name: motion planner output
+    executable: motion_planner_output_interfaces
+    path: $prefix/control
+    arg:
+  - name: local planner
+    executable: local_planner
+    path: $prefix/control
+    arg:

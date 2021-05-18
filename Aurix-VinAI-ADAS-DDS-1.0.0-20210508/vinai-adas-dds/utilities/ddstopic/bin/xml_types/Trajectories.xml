@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<types xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:////home/asus/rti_connext_dds-6.0.1/bin/../resource/app/app_support/rtiddsgen/schema/rti_dds_topic_types.xsd">
+<include file="Header.xml"/>
+<include file="Trajectory.xml"/>
+<module name="adas_dds">
+  <struct name= "Trajectories">
+    <member name="header" type="nonBasic"  nonBasicTypeName= "adas_dds::std_msgs::Header"/>
+    <member name="trajectories" sequenceMaxLength="100" type="nonBasic"  nonBasicTypeName= "adas_dds::Trajectory"/>
+    <member name="num" type="uint32"/>
+  </struct>
+</module>
+</types>

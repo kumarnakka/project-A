@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<types xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:////home/asus/rti_connext_dds-6.0.1/bin/../resource/app/app_support/rtiddsgen/schema/rti_dds_topic_types.xsd">
+<include file="Header.xml"/>
+<include file="LineHeader.xml"/>
+<module name="adas_dds">
+  <struct name= "LaneBoundary">
+    <member name="header" type="nonBasic"  nonBasicTypeName= "adas_dds::std_msgs::Header"/>
+    <member name="line_header" type="nonBasic"  nonBasicTypeName= "adas_dds::LineHeader"/>
+    <member name="c0" type="float32"/>
+    <member name="c0_std" type="float32"/>
+    <member name="quality" type="char8"/>
+    <member name="c1" type="float32"/>
+    <member name="c1_std" type="float32"/>
+    <member name="c2" type="float32"/>
+    <member name="c2_std" type="float32"/>
+    <member name="c3" type="float32"/>
+    <member name="c3_std" type="float32"/>
+    <member name="x_start" type="float32"/>
+    <member name="x_end" type="float32"/>
+  </struct>
+</module>
+</types>

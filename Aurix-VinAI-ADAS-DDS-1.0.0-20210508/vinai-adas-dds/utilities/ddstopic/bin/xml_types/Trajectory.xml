@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<types xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:////home/asus/rti_connext_dds-6.0.1/bin/../resource/app/app_support/rtiddsgen/schema/rti_dds_topic_types.xsd">
+<include file="TrajectoryPoint.xml"/>
+<include file="TrajectoryCoeff.xml"/>
+<module name="adas_dds">
+  <struct name= "Trajectory">
+    <member name="header" type="nonBasic"  nonBasicTypeName= "adas_dds::std_msgs::Header"/>
+    <member name="trajectory" sequenceMaxLength="100" type="nonBasic"  nonBasicTypeName= "adas_dds::TrajectoryPoint"/>
+    <member name="step" type="uint32"/>
+    <member name="coeff" type="nonBasic"  nonBasicTypeName= "adas_dds::TrajectoryCoeff"/>
+    <member name="id" type="int32"/>
+  </struct>
+</module>
+</types>

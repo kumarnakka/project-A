@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<types xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:////home/asus/rti_connext_dds-6.0.1/bin/../resource/app/app_support/rtiddsgen/schema/rti_dds_topic_types.xsd">
+<module name="adas_dds">
+  <struct name= "LineHeader">
+    <member name="sensor_type" type="char8"/>
+    <member name="line_id" type="char8" key="true"/>
+    <member name="line_predicted" type="boolean"/>
+    <member name="confidence" type="float32"/>
+    <member name="line_type" type="char8"/>
+    <member name="mark_width" type="float32"/>
+    <member name="mark_width_std" type="float32"/>
+    <member name="mark_color" type="char8"/>
+    <member name="line_crossing" type="char8"/>
+    <member name="line_decel_type" type="char8"/>
+    <member name="line_dlm_type" type="char8"/>
+    <member name="prediction_source" type="char8"/>
+    <member name="lane_speed_limit" type="float32"/>
+    <member name="lane_width" type="float32"/>
+    <member name="dash_average_length" type="float32"/>
+    <member name="dash_average_gap" type="float32"/>
+    <member name="road_edge_height" type="float32"/>
+    <member name="road_edge_height_std" type="float32"/>
+  </struct>
+</module>
+</types>

@@ -1,0 +1,15 @@
+params:
+  prefix: ../../../vinai-adas-dds-sdk/vinai-adas-dds-pro-1.0.0
+nodes:
+  - name: helloworld_pub
+    executable: helloworld_pub
+    path: $prefix/bin/armv8QNX7.0.0qcc_gpp5.4.0
+    args:
+      - argument_1
+      - demo_for_launch_binary
+      - the_third_argument_of_the_program
+  - name: helloworld_sub
+    executable: helloworld_sub
+    path: $prefix/bin/armv8QNX7.0.0qcc_gpp5.4.0
+    args:
+      - wellcom_to_ddslaunch

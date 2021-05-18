@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<types xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:////home/asus/rti_connext_dds-6.0.1/bin/../resource/app/app_support/rtiddsgen/schema/rti_dds_topic_types.xsd">
+<include file="Header.xml"/>
+<module name="adas_dds">
+  <struct name= "TrajectoryPoint">
+    <member name="header" type="nonBasic"  nonBasicTypeName= "adas_dds::std_msgs::Header"/>
+    <member name="x" type="float32"/>
+    <member name="y" type="float32"/>
+    <member name="z" type="float32"/>
+    <member name="theta" type="float32"/>
+    <member name="vx" type="float32"/>
+    <member name="vy" type="float32"/>
+    <member name="vz" type="float32"/>
+    <member name="v" type="float32"/>
+    <member name="vtheta" type="float32"/>
+    <member name="ax" type="float32"/>
+    <member name="ay" type="float32"/>
+    <member name="az" type="float32"/>
+    <member name="atheta" type="float32"/>
+    <member name="curv" type="float32"/>
+    <member name="vcurv" type="float32"/>
+    <member name="s" type="float32"/>
+    <member name="s_dot" type="float32"/>
+    <member name="s_ddot" type="float32"/>
+    <member name="d" type="float32"/>
+    <member name="d_dot" type="float32"/>
+    <member name="d_ddot" type="float32"/>
+    <member name="t" type="float32"/>
+    <member name="gear" type="uint8"/>
+    <member name="back" type="boolean"/>
+    <member name="light_signal" type="int16"/>
+  </struct>
+</module>
+</types>

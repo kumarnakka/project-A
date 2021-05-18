@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<types xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:////home/asus/rti_connext_dds-6.0.1/bin/../resource/app/app_support/rtiddsgen/schema/rti_dds_topic_types.xsd">
+<include file="Header.xml"/>
+<module name="adas_dds">
+  <struct name= "ControlCmd">
+    <member name="header" type="nonBasic"  nonBasicTypeName= "adas_dds::std_msgs::Header"/>
+    <member name="throttle_cmd" type="float32"/>
+    <member name="brake_cmd" type="float32"/>
+    <member name="hand_wheel_cmd" type="float32"/>
+    <member name="speed_cmd" type="float32"/>
+    <member name="acceleration_cmd" type="float32"/>
+    <member name="front_wheel_cmd" type="float32"/>
+    <member name="rear_wheel_cmd" type="float32"/>
+    <member name="front_wheel_dot_cmd" type="float32"/>
+    <member name="rear_wheel_dot_cmd" type="float32"/>
+    <member name="front_wheel_torque_cmd" type="float32"/>
+    <member name="rear_wheel_torque_cmd" type="float32"/>
+    <member name="left_turn_signal_cmd" type="boolean"/>
+    <member name="right_turn_signal_cmd" type="boolean"/>
+    <member name="warning_blinker_cmd" type="boolean"/>
+    <member name="gear_cmd" type="int16"/>
+    <member name="emergency_stop_cmd" type="uint8"/>
+    <member name="hand_wheel_rate_avg_cmd" type="float32"/>
+    <member name="hand_wheel_rate_maximum_cmd" type="float32"/>
+    <member name="hand_wheel_rate_cmd" type="float32"/>
+  </struct>
+</module>
+</types>

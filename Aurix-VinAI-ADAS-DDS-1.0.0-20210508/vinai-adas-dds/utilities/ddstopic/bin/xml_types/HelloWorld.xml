@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<types xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:////home/asus/rti_connext_dds-6.0.1/bin/../resource/app/app_support/rtiddsgen/schema/rti_dds_topic_types.xsd">
+<module name="adas">
+  <module name="dds">
+    <const name="HW_MSG_SIZE" type="int32" value="128"/>
+    <const name="HW_DATA_SIZE" type="int32" value="64"/>
+    <struct name= "HelloWorld">
+      <member name="id" type="int32"/>
+      <member name="msg" stringMaxLength="adas::dds::HW_MSG_SIZE" type="string"/>
+      <member name="data" sequenceMaxLength="adas::dds::HW_DATA_SIZE" type="byte"/>
+    </struct>
+  </module>
+</module>
+</types>
